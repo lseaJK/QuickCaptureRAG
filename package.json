@@ -11,12 +11,12 @@
   },
   "lint-staged": {
     "app-frontend/**/*.{ts,tsx}": [
-      "npm --prefix app-frontend run lint -- --fix",
-      "npm --prefix app-frontend run prettier -- --write"
+      "app-frontend/node_modules/.bin/eslint --fix",
+      "app-frontend/node_modules/.bin/prettier --write"
     ],
     "app-backend/**/*.py": [
-      "cd app-backend && .\\.venv\\Scripts\\activate && black",
-      "cd app-backend && .\\.venv\\Scripts\\activate && ruff --fix"
+      "app-backend/.venv/Scripts/black",
+      "app-backend/.venv/Scripts/ruff check --fix"
     ]
   },
   "repository": {

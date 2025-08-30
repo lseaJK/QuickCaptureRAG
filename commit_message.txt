@@ -1,6 +1,0 @@
-feat(project): initialize frontend and backend project structures
-
-- Create Tauri/React frontend in 'app-frontend'
-- Create FastAPI backend in 'app-backend'
-- Configure linters, formatters, and pre-commit hooks for both
-- Establish root package.json for workspace tooling
