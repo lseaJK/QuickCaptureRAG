@@ -1,5 +1,12 @@
 fastapi
 uvicorn[standard]
+google-generativeai
+python-dotenv
+lancedb
+llama-index
+llama-index-vector-stores-lancedb
+llama-index-embeddings-gemini
+llama-index-multi-modal-llms-gemini
 
 # Development tools
 black
