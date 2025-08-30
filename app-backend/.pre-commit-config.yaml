@@ -1,0 +1,10 @@
+repos:
+-   repo: https://github.com/pre-commit/mirrors-ruff
+    rev: v0.0.275
+    hooks:
+    -   id: ruff
+        args: [--fix, --exit-non-zero-on-fix]
+-   repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+    -   id: black

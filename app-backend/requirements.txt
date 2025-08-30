@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+
+# Development tools
+black
+ruff
+pre-commit

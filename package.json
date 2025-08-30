@@ -1,0 +1,38 @@
+{
+  "name": "quickcapturerag",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "app-frontend/**/*.{ts,tsx}": [
+      "npm --prefix app-frontend run lint -- --fix",
+      "npm --prefix app-frontend run prettier -- --write"
+    ],
+    "app-backend/**/*.py": [
+      "cd app-backend && .\\.venv\\Scripts\\activate && black",
+      "cd app-backend && .\\.venv\\Scripts\\activate && ruff --fix"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lseaJK/QuickCaptureRAG.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lseaJK/QuickCaptureRAG/issues"
+  },
+  "homepage": "https://github.com/lseaJK/QuickCaptureRAG#readme",
+  "description": "",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5"
+  }
+}
